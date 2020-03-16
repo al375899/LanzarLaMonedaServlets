@@ -10,7 +10,7 @@ public class HashGenerator {
 
 		try {
 			
-			md = MessageDigest.getInstance("MD5"); // SHA-1 //SHA-512
+			md = MessageDigest.getInstance("MD5"); // Tambien funciona con SHA-1 o SHA-512 pero el cliente no lo tiene implementado
 			md.update(password.getBytes());
 			byte[] mb = md.digest();
 
